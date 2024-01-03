@@ -13,6 +13,10 @@
 		1F63B6612B45205600B8D360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63B65F2B45205600B8D360 /* Main.storyboard */; };
 		1F63B6632B45205A00B8D360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F63B6622B45205A00B8D360 /* Assets.xcassets */; };
 		1F63B6662B45205A00B8D360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63B6642B45205A00B8D360 /* LaunchScreen.storyboard */; };
+		1F63B6722B4529C600B8D360 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63B6702B4529C600B8D360 /* MessageTableViewCell.swift */; };
+		1F63B6732B4529C600B8D360 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F63B6712B4529C600B8D360 /* MessageTableViewCell.xib */; };
+		1F63B6752B4543BD00B8D360 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63B6742B4543BD00B8D360 /* Model.swift */; };
+		338E7B75EEEC723C3AD4090D /* Pods_ChatAppWithWebSocket_03_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF2C089C02519AF260375FC /* Pods_ChatAppWithWebSocket_03_01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		1F63B6622B45205A00B8D360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F63B6652B45205A00B8D360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F63B6672B45205A00B8D360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F63B6702B4529C600B8D360 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		1F63B6712B4529C600B8D360 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		1F63B6742B4543BD00B8D360 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4FF2C089C02519AF260375FC /* Pods_ChatAppWithWebSocket_03_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppWithWebSocket_03_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BB6F48D22D48DCCA4A9C0D /* Pods-ChatAppWithWebSocket_03_01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppWithWebSocket_03_01.release.xcconfig"; path = "Target Support Files/Pods-ChatAppWithWebSocket_03_01/Pods-ChatAppWithWebSocket_03_01.release.xcconfig"; sourceTree = "<group>"; };
+		66CCAC40204B356ABCC74A65 /* Pods-ChatAppWithWebSocket_03_01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppWithWebSocket_03_01.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppWithWebSocket_03_01/Pods-ChatAppWithWebSocket_03_01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338E7B75EEEC723C3AD4090D /* Pods_ChatAppWithWebSocket_03_01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				1F63B6582B45205600B8D360 /* ChatAppWithWebSocket_03_01 */,
 				1F63B6572B45205600B8D360 /* Products */,
+				4436F95F02210E4ABC4DCE14 /* Pods */,
+				7621E393FC7F2324D11B0648 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,43 @@
 		1F63B6582B45205600B8D360 /* ChatAppWithWebSocket_03_01 */ = {
 			isa = PBXGroup;
 			children = (
+				1F63B66F2B45298300B8D360 /* cell */,
 				1F63B6592B45205600B8D360 /* AppDelegate.swift */,
 				1F63B65B2B45205600B8D360 /* SceneDelegate.swift */,
 				1F63B65D2B45205600B8D360 /* ViewController.swift */,
+				1F63B6742B4543BD00B8D360 /* Model.swift */,
 				1F63B65F2B45205600B8D360 /* Main.storyboard */,
-				1F63B6622B45205A00B8D360 /* Assets.xcassets */,
 				1F63B6642B45205A00B8D360 /* LaunchScreen.storyboard */,
+				1F63B6622B45205A00B8D360 /* Assets.xcassets */,
 				1F63B6672B45205A00B8D360 /* Info.plist */,
 			);
 			path = ChatAppWithWebSocket_03_01;
+			sourceTree = "<group>";
+		};
+		1F63B66F2B45298300B8D360 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1F63B6702B4529C600B8D360 /* MessageTableViewCell.swift */,
+				1F63B6712B4529C600B8D360 /* MessageTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		4436F95F02210E4ABC4DCE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66CCAC40204B356ABCC74A65 /* Pods-ChatAppWithWebSocket_03_01.debug.xcconfig */,
+				50BB6F48D22D48DCCA4A9C0D /* Pods-ChatAppWithWebSocket_03_01.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7621E393FC7F2324D11B0648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF2C089C02519AF260375FC /* Pods_ChatAppWithWebSocket_03_01.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F63B66A2B45205A00B8D360 /* Build configuration list for PBXNativeTarget "ChatAppWithWebSocket_03_01" */;
 			buildPhases = (
+				051B426F05F0857957811AAE /* [CP] Check Pods Manifest.lock */,
 				1F63B6522B45205600B8D360 /* Sources */,
 				1F63B6532B45205600B8D360 /* Frameworks */,
 				1F63B6542B45205600B8D360 /* Resources */,
+				4FF6CC95725BA58B251369A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F63B6662B45205A00B8D360 /* LaunchScreen.storyboard in Resources */,
+				1F63B6732B4529C600B8D360 /* MessageTableViewCell.xib in Resources */,
 				1F63B6632B45205A00B8D360 /* Assets.xcassets in Resources */,
 				1F63B6612B45205600B8D360 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +177,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		051B426F05F0857957811AAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatAppWithWebSocket_03_01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF6CC95725BA58B251369A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatAppWithWebSocket_03_01/Pods-ChatAppWithWebSocket_03_01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatAppWithWebSocket_03_01/Pods-ChatAppWithWebSocket_03_01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatAppWithWebSocket_03_01/Pods-ChatAppWithWebSocket_03_01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F63B6522B45205600B8D360 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F63B6752B4543BD00B8D360 /* Model.swift in Sources */,
 				1F63B65E2B45205600B8D360 /* ViewController.swift in Sources */,
 				1F63B65A2B45205600B8D360 /* AppDelegate.swift in Sources */,
 				1F63B65C2B45205600B8D360 /* SceneDelegate.swift in Sources */,
+				1F63B6722B4529C600B8D360 /* MessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +372,7 @@
 		};
 		1F63B66B2B45205A00B8D360 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66CCAC40204B356ABCC74A65 /* Pods-ChatAppWithWebSocket_03_01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatAppWithWebSocket_03_01/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHAT;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,6 +401,7 @@
 		};
 		1F63B66C2B45205A00B8D360 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BB6F48D22D48DCCA4A9C0D /* Pods-ChatAppWithWebSocket_03_01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatAppWithWebSocket_03_01/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHAT;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

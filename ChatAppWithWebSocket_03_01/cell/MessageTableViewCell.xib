@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="ChatAppWithWebSocket_03_01" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I62-Mg-rGk">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="134"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TA-N0-3AS">
+                                <rect key="frame" x="20" y="20" width="313" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0TA-N0-3AS" firstAttribute="top" secondItem="I62-Mg-rGk" secondAttribute="top" constant="20" id="UrS-4x-XmR"/>
+                            <constraint firstAttribute="trailing" secondItem="0TA-N0-3AS" secondAttribute="trailing" constant="20" id="VSG-r5-7QZ"/>
+                            <constraint firstItem="0TA-N0-3AS" firstAttribute="leading" secondItem="I62-Mg-rGk" secondAttribute="leading" constant="20" id="VUf-5D-8zm"/>
+                            <constraint firstAttribute="bottom" secondItem="0TA-N0-3AS" secondAttribute="bottom" constant="20" id="Wa3-Vz-fVa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="I62-Mg-rGk" secondAttribute="bottom" id="EJp-WH-ixH"/>
+                    <constraint firstAttribute="trailing" secondItem="I62-Mg-rGk" secondAttribute="trailing" id="Fha-fA-irP"/>
+                    <constraint firstItem="I62-Mg-rGk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H0d-7Y-vqL"/>
+                    <constraint firstItem="I62-Mg-rGk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i5c-yu-1YO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="0TA-N0-3AS" id="iBA-EE-hgZ"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="121.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
